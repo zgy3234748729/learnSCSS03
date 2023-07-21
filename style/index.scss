@@ -1,0 +1,22 @@
+$font-size: 40px;
+$font-color: red;
+
+// .test {
+//     font-size: $font-size;
+//     color: $font-color;
+// }
+
+div {
+    > p {
+        font-size: $font-size;
+    }
+
+    &:hover {
+        background-color: red;
+    }
+
+    & ~ p {
+        background-color: aqua;
+    }
+}
+
